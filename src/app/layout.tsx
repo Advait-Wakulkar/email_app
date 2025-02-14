@@ -26,11 +26,10 @@ export default function RootLayout({
     <ClerkProvider>
     <html lang="en" className={`${GeistSans.variable}`}>
       <body>
-      <SignedOut>
-            <SignInButton />
-          </SignedOut>
+        <SignedOut>
+        </SignedOut>
           <SignedIn>
-            <UserButton />
+        <UserButton />
           </SignedIn>
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
